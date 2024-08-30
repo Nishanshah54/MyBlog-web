@@ -1,5 +1,5 @@
 @extends('app')
-    @section('title','| login')
+    @section('title-section',' login')
 
     @section('main-contain')
 

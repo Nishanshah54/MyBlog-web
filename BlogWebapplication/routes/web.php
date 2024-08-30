@@ -20,3 +20,7 @@ Route::get('/U_Details',[UserController::class,'UserIndex'])->name('UserDetails'
 
 Route::get('/U_register',[RegisterController::class,'Register'])->name('Register');
 Route::get('/U_login',[RegisterController::class,'Login_U'])->name('Sign1');
+// use App\Http\Controllers\Auth\RegisterController;
+
+Route::post('/register', [RegisterController::class, 'register_validation'])->name('register_validation');
+

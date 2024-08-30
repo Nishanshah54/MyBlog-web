@@ -15,12 +15,28 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{route('comment')}}">comment</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route('admin')}}">Admin</a>
+
+          {{-- admin section --}}
+          <li class="nav-item dropdown">
+            {{-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{{route('admin')}}">Admin</a>       </li>      --}}
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Admin
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="{{route('admin')}}">Index | admin</a></li>
+                  <li><a class="dropdown-item" href="">ManagePost</a></li>
+                  <li><a class="dropdown-item" href="">ManageComments</a></li>
+                  <li><a class="dropdown-item" href="">ManageUsers</a></li>
+                </ul>
+            
+
+            </li>
+            {{-- end-admin --}}
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
-          </li>
+          </li> --}}
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               User Page
@@ -32,7 +48,7 @@
               {{-- <li><hr class="dropdown-divider"></li> --}}
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </li>
+          </li>          
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
